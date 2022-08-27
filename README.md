@@ -41,29 +41,29 @@ def sum_two_component(input_array, target_value):
 
     return None
 
-
 test_array = [1, 3, 7, 9, 2]
 target_value = 11
 result = sum_two_component(test_array, target_value)
-print(result)
+print(result) # Expect [3,4]
 
 test_array = [1, 3, 7, 9, 2]
 target_value = 25
 result = sum_two_component(test_array, target_value)
-print(result)
+print(result) # Expect None
 
 test_array = []
 target_value = 4
 result = sum_two_component(test_array, target_value)
-print(result)
+print(result) # Expect None
 
 test_array = [5]
 target_value = 5
 result = sum_two_component(test_array, target_value)
-print(result)
+print(result) # Expect None
 
 test_array = [1, 6]
 target_value = 7
 result = sum_two_component(test_array, target_value)
-print(result)
+print(result) # Expect [0,1]
+
 ```
