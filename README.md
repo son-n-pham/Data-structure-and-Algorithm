@@ -70,3 +70,26 @@ print(result) # Expect [0,1]
 
 - Step 6 (Optional): Optimization
   - The above solution is O(N<sup>2</sup>)
+  - Hash map is a better solution
+  - This solution uses O(N) space and O(N) time
+
+```p
+def sum_two(nums, target):
+    # Check nums
+    if len(nums) < 2:
+        return None
+
+		# Generate nums_map with key is the target_p2 of 
+  	# each p1 and value is index of each p1
+    nums_map = {}
+
+    # Loop P1 from index of 0 to index of length-1 of nums
+    for p1_index, p1 in enumerate(nums):
+        if nums_map.get(p1, None) is None:
+            target_p2 = target - p1
+            nums_map.update({target_p2: p1_index})
+        else:
+            return [nums_map[p1], p1_index]
+
+    return None
+```
