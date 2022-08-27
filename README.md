@@ -20,7 +20,7 @@ Example question: Given an array of integers, return the indices of the two numb
   - Loop P1 from index of 0 to index of length-1
     - At each looping step of P1, calculate target value - P1's value to have the targeted number of P2.
     - Loop P2 from P1's index + 1, to the end. Compare value of P2 with the calculated value
-- Step 4: Code
+- Step 4: Put into code
 ```python
 # Question: Given an array of integers, return the indices of the two numbers that add up to a given target.
 
@@ -67,3 +67,6 @@ result = sum_two_component(test_array, target_value)
 print(result) # Expect [0,1]
 
 ```
+
+- Step 6 (Optional): Optimization
+  - The above solution is O(N<sup>2</sup>)
